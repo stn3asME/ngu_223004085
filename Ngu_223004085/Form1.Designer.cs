@@ -42,6 +42,7 @@
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ds1 = new Ngu_223004085.DataSet1();
             this.bookTableAdapter1 = new Ngu_223004085.DataSet1TableAdapters.BookTableAdapter();
+            this.bTa2 = new Ngu_223004085.DataSet1TableAdapters.BookTableAdapter();
             this.tabControl1.SuspendLayout();
             this.booksP.SuspendLayout();
             this.groupBookList.SuspendLayout();
@@ -108,6 +109,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(427, 320);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // fillByToolStrip
             // 
@@ -159,6 +161,10 @@
             // 
             this.bookTableAdapter1.ClearBeforeFill = true;
             // 
+            // bTa2
+            // 
+            this.bTa2.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +202,7 @@
         private DataSet1TableAdapters.BookTableAdapter bookTableAdapter1;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
         private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private DataSet1TableAdapters.BookTableAdapter bTa2;
     }
 }
 

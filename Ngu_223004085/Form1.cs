@@ -39,5 +39,10 @@ namespace Ngu_223004085
             }
 
         }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            bTa2.FillBy(this.ds1.Book);
+        }
     }
 }
