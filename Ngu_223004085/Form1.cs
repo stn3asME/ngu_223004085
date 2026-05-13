@@ -26,5 +26,18 @@ namespace Ngu_223004085
         {
 
         }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.bookTableAdapter1.FillBy(this.ds1.Book);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }
